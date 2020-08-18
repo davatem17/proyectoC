@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     cliente_dialog.cpp \
+    dubasedatos.cpp \
     factura_dialog.cpp \
     inventario_dialog.cpp \
     main.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
 
 HEADERS += \
     cliente_dialog.h \
+    dubasedatos.h \
     factura_dialog.h \
     inventario_dialog.h \
     mainwindow.h

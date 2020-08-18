@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "dubasedatos.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +16,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_btcliete_clicked();
+
+    void on_btfactura_clicked();
+
+    void on_btinventario_clicked();
+
 private:
     Ui::MainWindow *ui;
+    DuBaseDatos mBaseDatos;
 };
 #endif // MAINWINDOW_H

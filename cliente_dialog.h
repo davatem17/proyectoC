@@ -7,6 +7,8 @@ namespace Ui {
 class Cliente_Dialog;
 }
 
+class QSqlTableModel;
+
 class Cliente_Dialog : public QDialog
 {
     Q_OBJECT
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::Cliente_Dialog *ui;
+    QSqlTableModel *mModel;
 };
 
 #endif // CLIENTE_DIALOG_H

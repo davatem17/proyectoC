@@ -7,6 +7,8 @@ namespace Ui {
 class Inventario_Dialog;
 }
 
+class QSqlTableModel;
+
 class Inventario_Dialog : public QDialog
 {
     Q_OBJECT
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::Inventario_Dialog *ui;
+    QSqlTableModel *mModel;
 };
 
 #endif // INVENTARIO_DIALOG_H

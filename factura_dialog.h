@@ -7,6 +7,8 @@ namespace Ui {
 class Factura_Dialog;
 }
 
+class QSqlTableModel;
+
 class Factura_Dialog : public QDialog
 {
     Q_OBJECT
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::Factura_Dialog *ui;
+    QSqlTableModel *mModel;
 };
 
 #endif // FACTURA_DIALOG_H
