@@ -16,13 +16,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    cliente_dialog.cpp \
+    factura_dialog.cpp \
+    inventario_dialog.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    cliente_dialog.h \
+    factura_dialog.h \
+    inventario_dialog.h \
     mainwindow.h
 
 FORMS += \
+    cliente_dialog.ui \
+    factura_dialog.ui \
+    inventario_dialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.
