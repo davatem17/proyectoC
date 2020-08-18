@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     cliente_dialog.cpp \
+    detalle_dialog.cpp \
     dubasedatos.cpp \
     factura_dialog.cpp \
     inventario_dialog.cpp \
@@ -25,6 +26,7 @@ SOURCES += \
 
 HEADERS += \
     cliente_dialog.h \
+    detalle_dialog.h \
     dubasedatos.h \
     factura_dialog.h \
     inventario_dialog.h \
@@ -32,6 +34,7 @@ HEADERS += \
 
 FORMS += \
     cliente_dialog.ui \
+    detalle_dialog.ui \
     factura_dialog.ui \
     inventario_dialog.ui \
     mainwindow.ui
@@ -40,3 +43,4 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+QMAKE_CXXFLAGS += -std=gnu++11

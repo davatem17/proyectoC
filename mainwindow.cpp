@@ -3,7 +3,7 @@
 #include "cliente_dialog.h"
 #include "inventario_dialog.h"
 #include "factura_dialog.h"
-
+#include "detalle_dialog.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -11,9 +11,9 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
     , mBaseDatos("proyecto1factura",
                  "root",
-                 "12345678",
+                 "Pelusa17",
                  "localhost",
-                 3306)
+                 3307)
 {
     ui->setupUi(this);
     QString mensajeError;
@@ -44,5 +44,16 @@ void MainWindow::on_btfactura_clicked()
 void MainWindow::on_btinventario_clicked()
 {
     Inventario_Dialog d(this);
+    d.exec();
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    close();
+}
+
+void MainWindow::on_btdetalle_clicked()
+{
+    detalle_dialog d(this);
     d.exec();
 }

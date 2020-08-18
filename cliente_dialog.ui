@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
-    <height>335</height>
+    <width>642</width>
+    <height>297</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,37 +16,161 @@
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>10</y>
-     <width>391</width>
-     <height>291</height>
+     <x>170</x>
+     <y>90</y>
+     <width>461</width>
+     <height>201</height>
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnuevo">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>156</y>
-     <width>75</width>
-     <height>23</height>
+     <x>120</x>
+     <y>92</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-factura-Desktop_Qt_5_15_0_MinGW_64_bit-Release/images/nuevo.png</normaloff>../build-factura-Desktop_Qt_5_15_0_MinGW_64_bit-Release/images/nuevo.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="bteliminar">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>156</y>
-     <width>75</width>
-     <height>23</height>
+     <x>120</x>
+     <y>136</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-factura-Desktop_Qt_5_15_0_MinGW_64_bit-Release/images/eliminar.png</normaloff>../build-factura-Desktop_Qt_5_15_0_MinGW_64_bit-Release/images/eliminar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btactualizar">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>180</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-factura-Desktop_Qt_5_15_0_MinGW_64_bit-Release/images/actualizar.png</normaloff>../build-factura-Desktop_Qt_5_15_0_MinGW_64_bit-Release/images/actualizar.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>123</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>CLIENTE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>60</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NUEVO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>85</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>106</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ACTUALIZAR</string>
    </property>
   </widget>
  </widget>
