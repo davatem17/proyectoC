@@ -9,11 +9,6 @@ detalle_dialog::detalle_dialog(QWidget *parent) :
     ui(new Ui::detalle_dialog)
 {
     ui->setupUi(this);
-}
-
-detalle_dialog::~detalle_dialog()
-{
-    delete ui;
     mModel = new QSqlRelationalTableModel(this);
     mDelegate = new QSqlRelationalDelegate(this);
 
@@ -23,4 +18,9 @@ detalle_dialog::~detalle_dialog()
       mModel->setRelation(3, QSqlRelation("inventario","id_inventario","Inventario"));
     ui->tableView->setModel(mModel);
     ui->tableView->setItemDelegate(mDelegate);
+}
+
+detalle_dialog::~detalle_dialog()
+{
+    delete ui;
 }
