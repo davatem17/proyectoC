@@ -18,6 +18,13 @@ public:
     explicit Factura_Dialog(QWidget *parent = nullptr);
     ~Factura_Dialog();
 
+private slots:
+    void on_btnuevo_clicked();
+
+    void on_bteliminar_clicked();
+
+    void on_btactualizar_clicked();
+
 private:
     Ui::Factura_Dialog *ui;
     QSqlRelationalTableModel *mModel;

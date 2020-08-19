@@ -32,3 +32,18 @@ Factura_Dialog::~Factura_Dialog()
 {
     delete ui;
 }
+
+void Factura_Dialog::on_btnuevo_clicked()
+{
+    mModel->insertRow(mModel->rowCount());
+}
+
+void Factura_Dialog::on_bteliminar_clicked()
+{
+    mModel->removeRow(ui->tableView->currentIndex().row());
+}
+
+void Factura_Dialog::on_btactualizar_clicked()
+{
+    mModel->select();
+}

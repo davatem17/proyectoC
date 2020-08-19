@@ -17,3 +17,18 @@ Inventario_Dialog::~Inventario_Dialog()
 {
     delete ui;
 }
+
+void Inventario_Dialog::on_btNUEVO_clicked()
+{
+    mModel->insertRow(mModel->rowCount());
+}
+
+void Inventario_Dialog::on_bteliminar_clicked()
+{
+    mModel->removeRow(ui->tableView->currentIndex().row());
+}
+
+void Inventario_Dialog::on_btnactualizar_clicked()
+{
+    mModel->select();
+}

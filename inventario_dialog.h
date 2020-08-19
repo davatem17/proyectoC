@@ -17,6 +17,13 @@ public:
     explicit Inventario_Dialog(QWidget *parent = nullptr);
     ~Inventario_Dialog();
 
+private slots:
+    void on_btNUEVO_clicked();
+
+    void on_bteliminar_clicked();
+
+    void on_btnactualizar_clicked();
+
 private:
     Ui::Inventario_Dialog *ui;
     QSqlTableModel *mModel;

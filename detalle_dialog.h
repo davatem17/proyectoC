@@ -18,6 +18,13 @@ public:
     explicit detalle_dialog(QWidget *parent = nullptr);
     ~detalle_dialog();
 
+private slots:
+    void on_btnuevo_clicked();
+
+    void on_bteliminar_clicked();
+
+    void on_btactualizar_clicked();
+
 private:
     Ui::detalle_dialog *ui;
     QSqlRelationalTableModel *mModel;
