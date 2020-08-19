@@ -17,3 +17,18 @@ Cliente_Dialog::~Cliente_Dialog()
 {
     delete ui;
 }
+
+void Cliente_Dialog::on_btnuevo_clicked()
+{
+
+}
+
+void Cliente_Dialog::on_bteliminar_clicked()
+{
+
+}
+
+void Cliente_Dialog::on_btactualizar_clicked()
+{
+
+}
