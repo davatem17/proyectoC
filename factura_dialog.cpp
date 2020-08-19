@@ -23,7 +23,7 @@ Factura_Dialog::Factura_Dialog(QWidget *parent) :
     mModel->setHeaderData(ID, Qt::Horizontal, "ID");
     mModel->setHeaderData(CEDULA, Qt::Horizontal, "CEDULA");
     mModel->setHeaderData(FECHA, Qt::Horizontal, "FECHA");
-    mModel->setRelation(CEDULA, QSqlRelation("cliente","cedula_cliente","Cedula"));
+    mModel->setRelation(CEDULA, QSqlRelation("cliente","cedula_cliente","cedula_cliente"));
     ui->tableView->setModel(mModel);
     ui->tableView->setItemDelegate(mDelegate);
 }

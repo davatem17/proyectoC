@@ -20,13 +20,14 @@ detalle_dialog::detalle_dialog(QWidget *parent) :
     mDelegate = new QSqlRelationalDelegate(this);
 
     mModel->setTable("detallefactura");
-    mModel->select();
+
     mModel->setHeaderData(ID, Qt::Horizontal,"ID");
     mModel->setHeaderData(FACTURA, Qt::Horizontal,"FACTURA");
     mModel->setHeaderData(CANTIDAD, Qt::Horizontal,"CANTIDAD");
     mModel->setHeaderData(INVENTARIO, Qt::Horizontal,"INVENTARIO");
-    mModel->setRelation(FACTURA, QSqlRelation("facturahead","id_factura","Factura"));
-    mModel->setRelation(INVENTARIO, QSqlRelation("inventario","nombre_inventario","Inventario"));
+    mModel->setRelation(FACTURA, QSqlRelation("facturahead","id_factura","id_factura"));
+    mModel->setRelation(INVENTARIO, QSqlRelation("inventario","id_inventario","nombre_inventario"));
+    mModel->select();
     ui->tableView->setModel(mModel);
     ui->tableView->setItemDelegate(mDelegate);
 }
