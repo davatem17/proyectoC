@@ -20,15 +20,15 @@ Cliente_Dialog::~Cliente_Dialog()
 
 void Cliente_Dialog::on_btnuevo_clicked()
 {
-
+	mModel->insertRow(mModel->rowCount());
 }
 
 void Cliente_Dialog::on_bteliminar_clicked()
 {
-
+	mModel->removeRow(ui->tableView->currentIndex().row());
 }
 
 void Cliente_Dialog::on_btactualizar_clicked()
 {
-
+	mModel->select();
 }
