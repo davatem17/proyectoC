@@ -7,6 +7,9 @@ namespace Ui {
 class detalle_dialog;
 }
 
+class QSqlRelationalTableModel;
+class QSqlRelationalDelegate;
+
 class detalle_dialog : public QDialog
 {
     Q_OBJECT
@@ -17,6 +20,8 @@ public:
 
 private:
     Ui::detalle_dialog *ui;
+    QSqlRelationalTableModel *mModel;
+    QSqlRelationalDelegate *mDelegate;
 };
 
 #endif // DETALLE_DIALOG_H
